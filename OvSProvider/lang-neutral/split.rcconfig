@@ -1,0 +1,11 @@
+<localization>
+      <resources>
+            <win32Resources fileType="Application">
+                  <neutralResources>
+                  </neutralResources>
+                  <localizedResources>
+                        <resourceType typeNameId="#11"/>
+                  </localizedResources>
+            </win32Resources>
+      </resources>
+</localization>

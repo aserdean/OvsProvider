@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<instrumentationManifest xsi:schemaLocation="http://schemas.microsoft.com/win/2004/08/events eventman.xsd" xmlns="http://schemas.microsoft.com/win/2004/08/events" xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:trace="http://schemas.microsoft.com/win/2004/08/events/trace">
+	<instrumentation>
+		<events>
+			<provider name="Linux Foundation-Open vSwitch-Userspace" guid="{94208E30-7D3C-43BC-83DC-EC24E4CDBAD8}" symbol="Linux_Foundation_Open_vSwitch_Userspace" resourceFileName="%systemdrive%\Eventing\OvS\OvSProvider.exe" messageFileName="%systemdrive%\Eventing\OvS\OvSProvider.exe">
+				<events>
+					<event symbol="Userspace_Error_Event" value="100" version="0" channel="Userspace" level="win:Error" task="SampleTask" opcode="SampleOpcode" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Userspace.event.100.message)"></event>
+					<event symbol="Userspace_Warning_Event" value="101" version="0" channel="Userspace" level="win:Warning" task="SampleTask" opcode="SampleOpcode" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Userspace.event.101.message)"></event>
+					<event symbol="Userspace_Informational_Event" value="102" version="0" channel="Userspace" level="win:Informational" task="SampleTask" opcode="SampleOpcode" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Userspace.event.102.message)"></event>
+					<event symbol="Userspace_Critical_Event" value="103" version="0" channel="Userspace" level="win:Critical" task="SampleTask" opcode="SampleOpcode" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Userspace.event.103.message)"></event>
+					<event symbol="Userspace_Verbose_Event" value="104" version="0" channel="Userspace" level="win:Verbose" task="SampleTask" opcode="SampleOpcode" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Userspace.event.104.message)"></event>
+				</events>
+				<levels>
+					<level name="OFF" symbol="OFF" value="16"></level>
+					<level name="ERR" symbol="ERR" value="17"></level>
+					<level name="EMER" symbol="EMER" value="18"></level>
+					<level name="WARN" symbol="WARN" value="19"></level>
+					<level name="INFO" symbol="INFO" value="20"></level>
+					<level name="DBG" symbol="DBG" value="21"></level>
+				</levels>
+				<tasks>
+					<task name="SampleTask" symbol="Sample_Task" value="100" eventGUID="{00000000-0000-0000-0000-000000000000}" message="$(string.Linux Foundation-Open vSwitch-Userspace.task.Sample_Task.message)"></task>
+				</tasks>
+				<opcodes>
+					<opcode name="SampleOpcode" symbol="Sample_Opcode" value="10" message="$(string.Linux Foundation-Open vSwitch-Userspace.opcode.Sample_Opcode.message)"></opcode>
+				</opcodes>
+				<channels>
+					<channel name="Userspace" chid="Userspace" symbol="Userspace" type="Operational" enabled="true"></channel>
+				</channels>
+				<templates>
+					<template tid="T_UnicodeString">
+						<data name="Prop_UnicodeString" inType="win:UnicodeString" outType="xs:string"></data>
+					</template>
+				</templates>
+			</provider>
+			<provider name="Linux Foundation-Open vSwitch-Datapath" guid="{67C8959D-3106-469A-9D06-83E96ED78B68}" symbol="Linux_Foundation_Open_vSwitch_Datapath" resourceFileName="%systemdrive%\Eventing\OvS\OvSProvider.exe" messageFileName="%systemdrive%\Eventing\OvS\OvSProvider.exe">
+				<events>
+					<event symbol="Datapath_Error_Event" value="200" version="0" channel="Datapath" level="win:Error" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Datapath.event.200.message)"></event>
+					<event symbol="Datapath_Warning_Event" value="201" version="0" channel="Datapath" level="win:Warning" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Datapath.event.201.message)"></event>
+					<event symbol="Datapath_Informational_Event" value="202" version="0" channel="Datapath" level="win:Informational" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Datapath.event.202.message)"></event>
+					<event symbol="Datapath_Critical_Event" value="203" version="0" channel="Datapath" level="win:Critical" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Datapath.event.203.message)"></event>
+					<event symbol="Datapath_Verbose_Event" value="204" version="0" channel="Datapath" level="win:Verbose" template="T_UnicodeString" message="$(string.Linux Foundation-Open vSwitch-Datapath.event.204.message)"></event>
+				</events>
+				<levels></levels>
+				<channels>
+					<channel name="Datapath" chid="Datapath" symbol="Datapath" type="Operational" enabled="true"></channel>
+				</channels>
+				<templates>
+					<template tid="T_UnicodeString">
+						<data name="Prop_UnicodeString" inType="win:UnicodeString" outType="xs:string"></data>
+					</template>
+				</templates>
+			</provider>
+		</events>
+	</instrumentation>
+	<localization>
+		<resources culture="en-US">
+			<stringTable>
+				<string id="level.Warning" value="Warning"></string>
+				<string id="level.Verbose" value="Verbose"></string>
+				<string id="level.Informational" value="Information"></string>
+				<string id="level.Error" value="Error"></string>
+				<string id="level.Critical" value="Critical"></string>
+				<string id="Linux Foundation-Open vSwitch-Userspace.task.Sample_Task.message" value="Task ID: Sample Task"></string>
+				<string id="Linux Foundation-Open vSwitch-Userspace.opcode.Sample_Opcode.message" value="Opcode ID: Sample Opcode"></string>
+			
+				<string id="Linux Foundation-Open vSwitch-Userspace.event.104.message" value="Event data: %1"></string>
+				<string id="Linux Foundation-Open vSwitch-Userspace.event.103.message" value="Event data: %1"></string>
+				<string id="Linux Foundation-Open vSwitch-Userspace.event.102.message" value="Event data: %1"></string>
+				<string id="Linux Foundation-Open vSwitch-Userspace.event.101.message" value="Event data: %1"></string>
+				<string id="Linux Foundation-Open vSwitch-Userspace.event.100.message" value="Event data: %1"></string>
+				
+				<string id="Linux Foundation-Open vSwitch-Datapath.event.204.message" value="Event data: %1"></string>
+				<string id="Linux Foundation-Open vSwitch-Datapath.event.203.message" value="Event data: %1"></string>
+				<string id="Linux Foundation-Open vSwitch-Datapath.event.202.message" value="Event data: %1"></string>
+				<string id="Linux Foundation-Open vSwitch-Datapath.event.201.message" value="Event data: %1"></string>
+				<string id="Linux Foundation-Open vSwitch-Datapath.event.200.message" value="Event data: %1"></string>
+			
+				</stringTable>
+		</resources>
+	</localization>
+</instrumentationManifest>

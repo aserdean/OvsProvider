@@ -1,0 +1,76 @@
+<Events>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Guid="{9e814aad-3204-11d2-9a82-006008a86939}" />
+		<EventID>0</EventID>
+		<Version>2</Version>
+		<Level>0</Level>
+		<Task>0</Task>
+		<Opcode>0</Opcode>
+		<Keywords>0x0</Keywords>
+		<TimeCreated SystemTime="2017-07-27T14:22:32.018750400+0259" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="7064" ThreadID="12948" ProcessorID="0" KernelTime="30" UserTime="0" />
+		<Channel />
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="BufferSize">    8192</Data>
+		<Data Name="Version">83951626</Data>
+		<Data Name="ProviderVersion">   15063</Data>
+		<Data Name="NumberOfProcessors">       8</Data>
+		<Data Name="EndTime">131456281928906350</Data>
+		<Data Name="TimerResolution">  156250</Data>
+		<Data Name="MaxFileSize">       0</Data>
+		<Data Name="LogFileMode">0x0</Data>
+		<Data Name="BuffersWritten">       2</Data>
+		<Data Name="StartBuffers">       1</Data>
+		<Data Name="PointerSize">       8</Data>
+		<Data Name="EventsLost">       0</Data>
+		<Data Name="CPUSpeed">    2592</Data>
+		<Data Name="LoggerName">0x9</Data>
+		<Data Name="LogFileName">0x6</Data>
+		<Data Name="BootTime">131449387034880866</Data>
+		<Data Name="PerfFreq">2531250</Data>
+		<Data Name="StartTime">131456281520187504</Data>
+		<Data Name="ReservedFlags">0x1</Data>
+		<Data Name="BuffersLost">       0</Data>
+		<Data Name="SessionNameString">OvSProvider</Data>
+		<Data Name="LogFileNameString">C:\Users\rmiclea\Documents\Visual Studio 2017\Projects\OvSProvider\OvSProvider\OvSProvider.etl</Data>
+	</EventData>
+	<RenderingInfo Culture="en-US">
+		<Opcode>Header</Opcode>
+		<Provider>MSNT_SystemTrace</Provider>
+		<EventName xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">EventTrace</EventName>
+	</RenderingInfo>
+	<ExtendedTracingInfo xmlns="http://schemas.microsoft.com/win/2004/08/events/trace">
+		<EventGuid>{68fdd900-4a3e-11d1-84f4-0000f80464e3}</EventGuid>
+	</ExtendedTracingInfo>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+	<System>
+		<Provider Name="Cloudbase Solutions-Open vSwitch-Userspace" Guid="{94208e30-7d3c-43bc-83dc-ec24e4cdbad8}" />
+		<EventID>100</EventID>
+		<Version>0</Version>
+		<Level>2</Level>
+		<Task>100</Task>
+		<Opcode>10</Opcode>
+		<Keywords>0x8000000000000000</Keywords>
+		<TimeCreated SystemTime="2017-07-27T14:22:50.617193000+0259" />
+		<Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />
+		<Execution ProcessID="11944" ThreadID="8472" ProcessorID="7" KernelTime="0" UserTime="0" />
+		<Channel>Userspace</Channel>
+		<Computer />
+	</System>
+	<EventData>
+		<Data Name="Prop_UnicodeString">UnicodeStringBla</Data>
+	</EventData>
+	<RenderingInfo Culture="en-US">
+		<Level>Error </Level>
+		<Opcode>Opcode ID: Sample Opcode </Opcode>
+		<Task>Task ID: Sample Task </Task>
+		<Message>Userspace Message ID: event 100 Event data: UnicodeStringBla </Message>
+		<Channel>Userspace channel localized message goes here. </Channel>
+	</RenderingInfo>
+</Event>
+</Events>
